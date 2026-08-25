@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Personal Homepage of Chi-Ok Hwang, Professor in Department of Mathematical Sciences at Gwangju Institute of Science and Technology.">
+  <title>Chi-Ok Hwang's Home Page</title>
+  <!-- Google Fonts for premium typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Skip Link for Keyboard Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Mobile Top Header Bar -->
+  <header class="mobile-header">
+    <button class="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="sidebar">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+    <div class="mobile-title">Chi-Ok Hwang</div>
+    <button class="theme-toggle-btn-mobile" aria-label="Toggle Color Theme">
+      <svg class="sun-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
+      <svg class="moon-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+    </button>
+  </header>
+
+  <!-- Navigation Sidebar (Collapsible Drawer on Mobile) -->
+  <aside id="sidebar" class="sidebar" aria-label="Main Navigation">
+    <div class="sidebar-scroll">
+      <!-- Profile Information -->
+      <div class="profile-card">
+        <div class="profile-avatar">
+          <svg viewBox="0 0 100 100" class="avatar-svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="avatar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="100%" stop-color="#6366f1" />
+              </linearGradient>
+            </defs>
+            <circle cx="50" cy="50" r="48" fill="url(#avatar-grad)" />
+            <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="34" font-family="Outfit, sans-serif" font-weight="700" letter-spacing="-1">COH</text>
+          </svg>
+        </div>
+        <h1 class="profile-name">Chi-Ok Hwang</h1>
+        <p class="profile-title">Professor</p>
+        <p class="profile-institution">Gwangju Institute of Science and Technology</p>
+        <p class="profile-location">Gwangju, South Korea</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active" data-target="home">
+          <span class="nav-icon">🏠</span>
+          <span class="nav-text">Home</span>
+        </a>
+        <a href="#resume" class="nav-link" data-target="resume">
+          <span class="nav-icon">📄</span>
+          <span class="nav-text">Resume</span>
+        </a>
+        <a href="#lectures" class="nav-link" data-target="lectures">
+          <span class="nav-icon">🎓</span>
+          <span class="nav-text">Old Lectures</span>
+        </a>
+        <a href="#thoughts" class="nav-link" data-target="thoughts">
+          <span class="nav-icon">💡</span>
+          <span class="nav-text">Collection of Thoughts</span>
+        </a>
+      </nav>
+
+      <!-- Theme Toggle & Contact in Sidebar Footer -->
+      <div class="sidebar-footer">
+        <button class="theme-toggle-btn" aria-label="Toggle Color Theme">
+          <span class="theme-btn-content dark-only">
+            <svg class="theme-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
+            Light Mode
+          </span>
+          <span class="theme-btn-content light-only">
+            <svg class="theme-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+            Dark Mode
+          </span>
+        </button>
+        <div class="contact-quick">
+          <a href="mailto:chwang@gist.ac.kr" class="contact-email">chwang@gist.ac.kr</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sidebar Overlay for Mobile Nav -->
+  <div class="sidebar-overlay" aria-hidden="true"></div>
+
+  <!-- Main Content Container -->
+  <main id="main-content" class="main-content">
+    
+    <!-- Fallback navigation for users with Javascript disabled -->
+    <noscript>
+      <div class="noscript-warning">
+        <p><strong>Note:</strong> Some interactive features like search filtering require JavaScript. You can browse the entire homepage directly below.</p>
+      </div>
+    </noscript>
+
+    <!-- SECTION: HOME -->
+    <section id="home" class="content-section active" aria-labelledby="sec-home-title">
+      <h2 id="sec-home-title" class="sr-only">Home</h2>
+      <div class="section-content">
+        <!-- Hero Introduction -->
+        <div class="card" style="margin-bottom: 2rem; border-top: 3px solid var(--accent-primary);">
+          <h3 style="font-size: 1.5rem; font-family: var(--font-serif); margin-top: 0; color: var(--text-primary);">Welcome to Chi-Ok Hwang's Personal Homepage</h3>
+          <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 1rem;">
+            Professor in the <a href="http://college.gist.ac.kr/" target="_blank" rel="noopener noreferrer">Department of Mathematical Sciences</a> at the <a href="https://www.gist.ac.kr" target="_blank" rel="noopener noreferrer">Gwangju Institute of Science and Technology (GIST)</a>.
+          </p>
+          <p>
+            My research primarily focuses on Computational Sciences, specifically Diffusion Monte Carlo methods, Kinetic Monte Carlo simulations, molecular dynamics, and electronic structure calculations.
+          </p>
+        </div>
+
+        <div class="card-grid-2">
+          <!-- Personal Information Card -->
+          <div class="card">
+            <h3 class="card-title">👤 Personal Info</h3>
+            <p>Access background information, career details, and personal photos:</p>
+            <div class="badge-list" style="margin-top: 1rem;">
+              <a href="#resume" class="badge">📄 Resume & CV</a>
+              <a href="http://minihp.cyworld.nate.com/pims/main/pims_photo.asp?tid=28931232&urlstr=phot" target="_blank" rel="noopener noreferrer" class="badge">📸 Photo Album</a>
+            </div>
+          </div>
+
+          <!-- Hobby Links Card -->
+          <div class="card">
+            <h3 class="card-title">🧘 Hobby Links</h3>
+            <p>Traditional Korean mind-body training and spiritual research websites:</p>
+            <div class="badge-list" style="margin-top: 1rem;">
+              <a href="http://www.ksd21.com" target="_blank" rel="noopener noreferrer" class="badge">🧘 Kukseondo</a>
+              <a href="http://www.handahn.co.kr" target="_blank" rel="noopener noreferrer" class="badge">🏛️ Handahn</a>
+              <a href="http://www.dahn.org" target="_blank" rel="noopener noreferrer" class="badge">🌿 Yeonjeongwon</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Links Card -->
+        <div class="card" style="margin-bottom: 2rem;">
+          <h3 class="card-title">🔗 Related Academic & Research Links</h3>
+          <p>Links to ministries, research institutes, departments, and academic societies:</p>
+          
+          <h4 style="margin: 1.5rem 0 0.5rem; font-size: 0.95rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Creation & General S&T</h4>
+          <div class="badge-list" style="margin-bottom: 1.5rem;">
+            <a href="http://www.kacr.or.kr" target="_blank" rel="noopener noreferrer" class="badge">🦖 Korea Association of Creation Research</a>
+            <a href="http://www.most.go.kr/" target="_blank" rel="noopener noreferrer" class="badge">🏛️ Ministry of Science & Technology</a>
+            <a href="http://www.kistep.re.kr/" target="_blank" rel="noopener noreferrer" class="badge">🔬 Korea Institute S&T Evaluation and Planning</a>
+            <a href="http://www.krf.or.kr/" target="_blank" rel="noopener noreferrer" class="badge">🎓 Korea Research Foundation</a>
+            <a href="http://www.kosen21.org/" target="_blank" rel="noopener noreferrer" class="badge">🌐 KOSEN</a>
+            <a href="http://www.hanminjok.net" target="_blank" rel="noopener noreferrer" class="badge">🌏 Global Korean Community</a>
+          </div>
+
+          <h4 style="margin: 1rem 0 0.5rem; font-size: 0.95rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Florida State University (FSU)</h4>
+          <div class="badge-list" style="margin-bottom: 1.5rem;">
+            <a href="http://www.csit.fsu.edu/" target="_blank" rel="noopener noreferrer" class="badge">💻 CSIT at Florida State University</a>
+            <a href="http://www.physics.fsu.edu/" target="_blank" rel="noopener noreferrer" class="badge">🌌 Physics Department at FSU</a>
+            <a href="http://www.cs.fsu.edu/" target="_blank" rel="noopener noreferrer" class="badge">⌨️ Computer Science Department at FSU</a>
+          </div>
+
+          <h4 style="margin: 1rem 0 0.5rem; font-size: 0.95rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Resources</h4>
+          <div class="badge-list">
+            <a href="Comp_programs.html" class="badge">📂 List of Computational Science Programs</a>
+          </div>
+        </div>
+
+        <!-- Maintenance Footer -->
+        <footer style="margin-top: auto; padding: 2rem 0 1rem; border-top: 1px solid var(--border-color); font-size: 0.8125rem; color: var(--text-muted); text-align: center;">
+          <p style="margin-bottom: 0.25rem;">
+            This page is maintained by <a href="mailto:chwang@gist.ac.kr" style="color: var(--text-secondary); text-decoration: underline;">Chi-Ok Hwang</a>.
+          </p>
+          <p>
+            Department of Mathematical Sciences, Gwangju Institute of Science and Technology.
+          </p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- SECTION: RESUME -->
+    <section id="resume" class="content-section" aria-labelledby="sec-resume-title">
+      <h2 id="sec-resume-title" class="sr-only">Resume</h2>
+      <div class="section-content">
+        
+        <!-- Main Section Title Card -->
+        <div class="card" style="margin-bottom: 2rem; border-top: 3px solid var(--accent-primary);">
+          <h1 style="font-size: 2rem; font-family: var(--font-serif); margin: 0; color: var(--text-primary);">Curriculum Vitae</h1>
+          <p style="margin-top: 0.5rem; font-style: italic;">Professor Chi-Ok Hwang — Academic and Research Profile</p>
+          
+          <!-- Quick Scroll Navigation -->
+          <div class="badge-list" style="margin-top: 1rem;">
+            <a href="#resume-education" class="badge">🎓 Education</a>
+            <a href="#resume-employment" class="badge">💼 Employment</a>
+            <a href="#resume-research" class="badge">🔬 Research Areas</a>
+            <a href="#resume-publications" class="badge">📚 Publications</a>
+            <a href="#resume-presentations" class="badge">🗣️ Presentations</a>
+            <a href="#resume-honors" class="badge">🏆 Awards & Info</a>
+          </div>
+        </div>
+
+        <!-- Timelines (Education & Employment) -->
+        <div class="card-grid-2">
+          <!-- Education Timeline Card -->
+          <div class="card" id="resume-education">
+            <h3 class="card-title">🎓 Education</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1996 – 1999</div>
+                <div class="timeline-title">Ph.D. in Scientific Computing</div>
+                <div class="timeline-subtitle"><a href="http://www.usm.edu/" target="_blank" rel="noopener noreferrer">University of Southern Mississippi</a></div>
+                <p style="font-size: 0.8125rem; line-height: 1.4; margin-bottom: 0;">
+                  Directed by <a href="http://www.cs.fsu.edu/~mascagni" target="_blank" rel="noopener noreferrer">Prof. Michael Mascagni</a>.<br>
+                  Dissertation: <a href="Papers/dissertation.ps"><em>"A New Fluid Permeability Estimation in Periodic Grain Consolidation Models and Nonoverlapping and Overlapping Mono-Sized Sphere Models of Porous Media"</em></a>
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1994 – 1996</div>
+                <div class="timeline-title">M.S. in Physics</div>
+                <div class="timeline-subtitle"><a href="http://www.usm.edu/" target="_blank" rel="noopener noreferrer">University of Southern Mississippi</a></div>
+                <p style="font-size: 0.8125rem; line-height: 1.4; margin-bottom: 0;">Computational Science emphasis.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1989 – 1991</div>
+                <div class="timeline-title">M.S. in Astronomy</div>
+                <div class="timeline-subtitle"><a href="https://www.snu.ac.kr/" target="_blank" rel="noopener noreferrer">Seoul National University</a></div>
+                <p style="font-size: 0.8125rem; line-height: 1.4; margin-bottom: 0;">
+                  Cosmology focus.<br>
+                  Thesis: <em>"Primordial Black Holes in the Very Early Universe"</em>
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1984 – 1988</div>
+                <div class="timeline-title">B.S. in Astronomy</div>
+                <div class="timeline-subtitle"><a href="https://www.snu.ac.kr/" target="_blank" rel="noopener noreferrer">Seoul National University</a></div>
+                <p style="font-size: 0.8125rem; line-height: 1.4; margin-bottom: 0;">
+                  Thesis: <em>"Galaxy Formation"</em>
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1981 – 1983</div>
+                <div class="timeline-title">Suncheon High School (순천고등학교)</div>
+                <div class="timeline-subtitle">33rd Graduating Class</div>
+                <p style="font-size: 0.8125rem; line-height: 1.4; margin-bottom: 0; color: var(--text-muted);">
+                  High School Diploma (33회)
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1978 – 1980</div>
+                <div class="timeline-title">Gwangyang Okryong Middle School (광양옥룡중학교)</div>
+                <div class="timeline-subtitle">7th Graduating Class</div>
+                <p style="font-size: 0.8125rem; line-height: 1.4; margin-bottom: 0; color: var(--text-muted);">
+                  Located in Okryong-myeon, Gwangyang-si (광양시 옥룡면 소재, 7회, 현재 폐교)
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1972 – 1977</div>
+                <div class="timeline-title">Okryong Elementary School (옥룡국민학교)</div>
+                <div class="timeline-subtitle">52nd Graduating Class (Currently 옥룡초등학교)</div>
+                <p style="font-size: 0.8125rem; line-height: 1.4; margin-bottom: 0; color: var(--text-muted);">
+                  Located in Okryong-myeon, Gwangyang-si (광양시 옥룡면 소재, 52회)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Employment Timeline Card -->
+          <div class="card" id="resume-employment">
+            <h3 class="card-title">💼 Employment</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2017 – Present</div>
+                <div class="timeline-title">Professor</div>
+                <div class="timeline-subtitle">Gwangju Institute of Science and Technology (GIST)</div>
+                <p style="font-size: 0.8125rem; margin-bottom: 0;">Research on Diffusion Monte Carlo methods, etc.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2010 – 2017</div>
+                <div class="timeline-title">Associate Professor</div>
+                <div class="timeline-subtitle">Gwangju Institute of Science and Technology (GIST)</div>
+                <p style="font-size: 0.8125rem; margin-bottom: 0;">Research on Diffusion Monte Carlo methods, etc.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2006 – 2010</div>
+                <div class="timeline-title">Senior Researcher</div>
+                <div class="timeline-subtitle"><a href="https://www.nims.re.kr/" target="_blank" rel="noopener noreferrer">National Institute for Mathematical Sciences (NIMS)</a></div>
+                <p style="font-size: 0.8125rem; margin-bottom: 0;">Daejeon, Korea. Research on Diffusion Monte Carlo.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2005 – 2006</div>
+                <div class="timeline-title">Research Professor</div>
+                <div class="timeline-subtitle">Computer Aided Molecular Design Research Center, Soongsil University</div>
+                <p style="font-size: 0.8125rem; margin-bottom: 0;">Research on Ising Antiferromagnetic Models.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2003 – 2005</div>
+                <div class="timeline-title">Visiting Professor</div>
+                <div class="timeline-subtitle">Computational Electronics Center, Inha University</div>
+                <p style="font-size: 0.8125rem; margin-bottom: 0;">KMC for dopant diffusion in Si, molecular dynamics for ion implantation, SIESTA/VASP calculations.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2002 – 2003</div>
+                <div class="timeline-title">Research Professor</div>
+                <div class="timeline-subtitle">Innovative Technology Center for Radiation Safety, Hanyang University</div>
+                <p style="font-size: 0.8125rem; margin-bottom: 0;">Research on Monte Carlo methods for Nuclear Engineering.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1999 – 2002</div>
+                <div class="timeline-title">PostDoctoral Research Associate</div>
+                <div class="timeline-subtitle">Florida State University</div>
+                <p style="font-size: 0.8125rem; margin-bottom: 0;">Research on SPRNG (Parallel Random Number Generators).</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1998 – 1999</div>
+                <div class="timeline-title">Research Assistant</div>
+                <div class="timeline-subtitle">University of Southern Mississippi</div>
+                <p style="font-size: 0.8125rem; margin-bottom: 0;">Research on First Passage Algorithms.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1995 – 1997</div>
+                <div class="timeline-title">Teaching Assistant</div>
+                <div class="timeline-subtitle">University of Southern Mississippi</div>
+                <p style="font-size: 0.8125rem; margin-bottom: 0;">Instructed Astronomy and Physics Labs.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1992 – 1994</div>
+                <div class="timeline-title">Instructor</div>
+                <div class="timeline-subtitle">Private Educational Institute</div>
+                <p style="font-size: 0.8125rem; margin-bottom: 0;">Taught high school students.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">1990 – 1992</div>
+                <div class="timeline-title">Teaching Assistant</div>
+                <div class="timeline-subtitle">Seoul National University</div>
+                <p style="font-size: 0.8125rem; margin-bottom: 0;">Helped Astronomy professors.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research Areas & Memberships -->
+        <div class="card-grid-2">
+          <!-- Research Areas -->
+          <div class="card" id="resume-research">
+            <h3 class="card-title">🔬 Research Areas</h3>
+            <div class="badge-list" style="margin-top: 1rem;">
+              <span class="badge">Ab-initio electronic structure calculations (SIESTA, VASP)</span>
+              <span class="badge">Molecular dynamics for ion implantation</span>
+              <span class="badge">Kinetic (Lattice) Monte Carlo for dopant diffusion</span>
+              <span class="badge">Hybrid Monte Carlo for particle transport (Nuclear Eng)</span>
+              <span class="badge">Green's Function Last-Passage Algorithms</span>
+              <span class="badge">Green's Function First-Passage Algorithms</span>
+              <span class="badge">Monte Carlo Simulations</span>
+              <span class="badge">SPRNG (Scalable Parallel Random Number Generators)</span>
+              <span class="badge">Parallel computing using MPI</span>
+              <span class="badge">Numerical solutions of Differential Equations</span>
+            </div>
+          </div>
+
+          <!-- Professional Memberships -->
+          <div class="card" id="resume-honors">
+            <h3 class="card-title">🌐 Memberships & Awards</h3>
+            <h4 style="font-size: 0.95rem; margin-top: 0.5rem; color: var(--text-primary);">Professional Memberships:</h4>
+            <ul style="margin-left: 1.25rem; margin-bottom: 1rem;">
+              <li>Korean Mathematical Society (KMS)</li>
+              <li>Korean Society for Industrial and Applied Mathematics (KSIAM)</li>
+              <li>Korean Physical Society (KPS)</li>
+            </ul>
+            <h4 style="font-size: 0.95rem; color: var(--text-primary);">Awards & Honors:</h4>
+            <ul style="margin-left: 1.25rem; margin-bottom: 0;">
+              <li><strong>2004 – 2005:</strong> KOSEN Expert</li>
+              <li><strong>1999:</strong> Elected to Sigma Pi Sigma (National Physics Honor Society, USM Chapter)</li>
+              <li><strong>1995 – 1997:</strong> Rotary Foundation Multi-Year Ambassadorial Scholarship ($10,000/year)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Publications & Presentations (Filterable Section) -->
+        <div class="card" id="resume-publications" style="margin-bottom: 2rem;">
+          <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Publications & Presentations</h2>
+          <p style="margin-bottom: 1.5rem;">Use the options below to instantly search and filter publications, conference papers, and presentations by keyword, year, or document type.</p>
+          
+          <!-- SEARCH AND FILTER CONTROLS -->
+          <div class="search-container">
+            <div class="search-input-wrapper">
+              <svg class="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              <input type="text" id="resume-search" class="search-input" placeholder="Search by title, venue, authors..." aria-label="Search Publications">
+            </div>
+            
+            <select id="resume-filter-type" class="filter-select" aria-label="Filter by Type">
+              <option value="all">All Types</option>
+              <option value="journal">International Journals</option>
+              <option value="national-journal">National Journals</option>
+              <option value="book">Books & Chapters</option>
+              <option value="talk">Presentations & Talks</option>
+              <option value="preprint">Preprints</option>
+              <option value="etc">Other Registry & Misc</option>
+            </select>
+
+            <select id="resume-filter-year" class="filter-select" aria-label="Filter by Year">
+              <option value="all">All Years</option>
+              <option value="2026">2026</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+              <option value="2006">2006</option>
+              <option value="2005">2005</option>
+              <option value="2004">2004</option>
+              <option value="2003">2003</option>
+              <option value="2002">2002</option>
+              <option value="2001">2001</option>
+              <option value="2000">2000</option>
+              <option value="1999">1999</option>
+              <option value="1998">1998</option>
+              <option value="1991">1991</option>
+            </select>
+          </div>
+
+          <!-- Empty State Message -->
+          <div id="filter-empty-state" class="empty-state" style="display: none;">
+            <p style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-primary);">No matching items found</p>
+            <p style="font-size: 0.875rem; margin-bottom: 0;">Try adjusting your keyword search or changing the filters.</p>
+          </div>
+
+          <div id="publications-list-container">
+            <!-- GROUP: INTERNATIONAL JOURNALS -->
+            <div class="pub-group" data-group-type="journal">
+              <h3 style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.25rem; margin-bottom: 1rem; margin-top: 2rem;">International Journal Papers</h3>
+              <ol class="filterable-list" style="display: flex; flex-direction: column; gap: 0.875rem;">
+                <li data-year="2025" data-type="journal">
+                  Muhammad Awais, Taeil Yoon, Chi-Ok Hwang and Byeongha Lee, <span class="pub-title">"DenSFA-PU: Learning to unwrap phase in severe noisy conditions"</span>, <em>Optics &amp; Laser Technology</em>, 187, 112757 (2025)
+                </li>
+                <li data-year="2024" data-type="journal">
+                  Jaeho Kim and Chi-Ok Hwang, <span class="pub-title">"Electrical properties of the unit square plate"</span>, <em>Journal of Electrostatics</em>, 129, 103907 (2024)
+                </li>
+                <li data-year="2023" data-type="journal">
+                  Youngjoo Chung, C.-O. Hwang and Hyun Seok Yang, <a href="Papers/JSTAT_CHwang2007.pdf">"Algebraic properties of Riemannian manifolds"</a>, <em>General Relativity and Gravitation</em>, 55, 92 (2023)
+                </li>
+                <li data-year="2023" data-type="journal">
+                  Jinseong Son, Dongheyon Shin and C.-O. Hwang, <a href="Papers/JSTAT_CHwang2007.pdf">"Walk-on-Hemispheres first-passage algorithm"</a>, <em>Scientific Reports</em>, 13, 1143 (2023)
+                </li>
+                <li data-year="2023" data-type="journal">
+                  H. Jang, U. Yu and C.-O. Hwang, <a href="Papers/JSTAT_CHwang2007.pdf">"Octupole Last-Passage Algorithm for Charge Density on the Fichera-Corner Conducting Surface"</a>, <em>Advanced Theory and Simulations</em>, 202300436 (2023)
+                </li>
+                <li data-year="2022" data-type="journal">
+                  Jinseong Son, Junhyeok Im and C.-O. Hwang, <a href="Papers/JSTAT_CHwang2007.pdf">"Sphere Last-Passage Algorithm for Charge Density on a Smooth (Convex) Conducting Surface"</a>, <em>Advanced Theory and Simulations</em>, 202200608 (2022)
+                </li>
+                <li data-year="2022" data-type="journal">
+                  Chanyong Park, C.-O. Hwang, Kyungchan Cho and Se-Jin Kim, <a href="Papers/JSTAT_CHwang2007.pdf">"Dual geometry of entanglement entropy via deep learning"</a>, <em>Physical Review D</em>, 106, 106017 (2022)
+                </li>
+                <li data-year="2021" data-type="journal">
+                  Unjong Yu, Hoseung Jang and C.-O. Hwang, <a href="Papers/JSTAT_CHwang2007.pdf">"A diffusion Monte Carlo method for charge density on a conducting surface at non-constant potentials"</a>, <em>Monte Carlo Methods and Applications</em>, 27(4), pp315-324 (2021)
+                </li>
+                <li data-year="2021" data-type="journal">
+                  H. Jang, J. Park, U. Yu and C.-O. Hwang, <a href="Papers/JSTAT_CHwang2007.pdf">"Quadrupole Last-passage Algorithm for Charge Density on an L-Shaped Conducting Surface"</a>, <em>Advanced Theory and Simulations</em>, doi:10.1002/adts.202100180 (2021)
+                </li>
+                <li data-year="2021" data-type="journal">
+                  H. Jang, J. Park, U. Yu and C.-O. Hwang, <a href="Papers/JSTAT_CHwang2007.pdf">"Last-passage Monte Carlo Algorithm for Charge Density on a Conducting Spherical Surface"</a>, <em>Journal of Scientific Computing</em>, doi:10.1007/s10915-021-01594-w (Aug. 6, 2021)
+                </li>
+                <li data-year="2021" data-type="journal">
+                  H. Jang, J. Given, U. Yu and C.-O. Hwang, <a href="Papers/JSTAT_CHwang2007.pdf">"Last-passage Algorithm for Charge Distribution over a Finite Region"</a>, <em>Advanced Theory and Simulations</em>, doi:10.1002/adts.202000268 (Jan. 4, 2021)
+                </li>
+                <li data-year="2020" data-type="journal">
+                  H. Jang, U. Yu, Y. Chung and C.-O. Hwang, <a href="Papers/">"Off-centered Last-passage Monte Carlo Algorithm for the Charge Density on a Flat Conducting Surface"</a>, <em>Advanced Theory and Simulations</em>, 3(8) (July 10, 2020)
+                </li>
+                <li data-year="2020" data-type="journal">
+                  C.-O. Hwang, M. Kim, <a href="Papers/">"Infinite Parallel Plates Algorithm"</a>, <em>Advanced Theory and Simulations</em>, 3(6), doi:10.1002/adts.202000014 (May 5, 2020)
+                </li>
+                <li data-year="2020" data-type="journal">
+                  C.-O. Hwang, Mi Do, <a href="Papers/">"Fast Diffusion Monte Carlo Sampling via Conformal Map"</a>, <em>Applied Mathematics</em>, 11, pp35-41 (Jan. 2020)
+                </li>
+                <li data-year="2019" data-type="journal">
+                  C.-O. Hwang, Youngmin Ko, Mingyo Kim and Jiseop Lim, <span class="pub-title">"Comment on 'Radial dependence of induced current density and small pixel effect in parallel-plate detectors'"</span>, <em>IEEE Transaction on Nuclear Science</em>, 66(9), pp2153-2155 (Sept. 2019)
+                </li>
+                <li data-year="2017" data-type="journal">
+                  C.-O. Hwang, Y. Kim, C. Im and S. Lee, <span class="pub-title">"Buffon's Needle Algorithm to Estimate &pi;"</span>, <em>Applied Mathematics</em>, 8, pp275-279 (March 3, 2017)
+                </li>
+                <li data-year="2016" data-type="journal">
+                  W. Kwak, Sanghyun Kim, and C.-O. Hwang, <span class="pub-title">"Phase Transitions of 2D Triangular Antiferromagnetic Ising Model in a Uniform Magnetic Field near h=0 and T=0"</span>, <em>Journal of Physics: Conference Series</em>, 750, 012012, pp1-5 (2016)
+                </li>
+                <li data-year="2016" data-type="journal">
+                  C.-O. Hwang, S. Park and W. Kwak, <span class="pub-title">"Study of the Antiferromagnetic Blume-Capel Model on kagome Lattice"</span>, <em>Journal of Physics: Conference Series</em>, 750, 012016, pp1-4 (2016)
+                </li>
+                <li data-year="2015" data-type="journal">
+                  C.-O. Hwang, Sungpyo Hong and Jinwoo Kim, <a href="Papers/JCP_2001.pdf">"Off-centered 'Walk-on-Spheres' (WOS) Algorithm"</a>, <em>Journal of Computational Physics</em>, 303, pp331-335 (Dec. 15, 2015)
+                </li>
+                <li data-year="2014" data-type="journal">
+                  C.-O. Hwang, S.-Y. Kim, <span class="pub-title">"Field-induced Kosterlitz-Thouless Transition in Critical Triangular-lattice Antiferromagnets"</span>, <em>Monte Carlo Methods and Applications</em>, 20(3), pp217-221 (2014)
+                </li>
+                <li data-year="2011" data-type="journal">
+                  S.-Y. Ha, T. Ha, C.-O. Hwang, and H. Lee, <span class="pub-title">"Nonlinear Instability of the One-Dimensional Vlasov-Yukawa System"</span>, <em>Journal of Mathematical Physics</em>, 52, 033301, pp1-23 (2 Mar. 2011)
+                </li>
+                <li data-year="2010" data-type="journal">
+                  C.-O. Hwang and S.-Y. Kim, <span class="pub-title">"Yang-Lee Zeros of the Triangular Ising Antiferromagnets"</span>, <em>Physica A: Statistical Mechanics and its Applications</em>, 389, pp5650-5654 (2010)
+                </li>
+                <li data-year="2010" data-type="journal">
+                  C.-O. Hwang, M. Mascagni and T. Won, <span class="pub-title">"Review: Monte Carlo Methods for Cube Capacitance"</span>, <em>Mathematics and Computers in Simulation</em>, 80, pp1089-1095 (2010)
+                </li>
+                <li data-year="2009" data-type="journal">
+                  C.-O. Hwang, <a href="Papers/COHwang_PRE2009.pdf">"Six-state clock model on the square lattice: Fisher zero approach with Wang-Landau sampling"</a>, <em>Physical Review E</em>, 80, 042103 (29 Oct. 2009)
+                </li>
+                <li data-year="2009" data-type="journal">
+                  J.H.Yoo, C.-O. Hwang and T. Won, <a href="Papers/.ps">"Minimized Atomistic Model (MAM) and Main Evolution Path for Dominant BmIn Clusters in Boron Diffusion"</a>, <em>Molecular Simulation</em>, 35(9), pp714-718 (Aug. 2009)
+                </li>
+                <li data-year="2008" data-type="journal">
+                  S.-Y. Kim, C.-O. Hwang and J. M. Kim, <a href="Papers/NPB_SYKim2008.pdf.pdf">"Partition Function Zeros of the Antiferromagnetic Ising Model on Triangular Lattice in the Complex Temperature Plane for Nonzero Magnetic Field"</a>, <em>Nuclear Physics B</em>, 805, pp441-450 (June 2008)
+                </li>
+                <li data-year="2008" data-type="journal">
+                  C.-O. Hwang, S.-Y. Kim, D. Kang and J. M. Kim, <a href="Papers/JKPS_CHwang2008.pdf">"Thermodynamic Properties of the Triangular-Lattice Ising Antiferromagnet in a Uniform Magnetic Field"</a>, <em>Journal of the Korean Physical Society</em>, 52, S203-S208 (Feb. 2008)
+                </li>
+                <li data-year="2007" data-type="journal">
+                  K.-S. Yoon, C.-O. Hwang, and T. Won, <a href="Papers/JKPS_KSYoon2007.pdf">"Determination of the KMC Parameters for Indium Diffusion in Silicon Substrates via an Ab-Initio Calculation"</a>, <em>Journal of the Korean Physical Society</em>, 50(6), pp1651-1655 (June 2007)
+                </li>
+                <li data-year="2007" data-type="journal">
+                  C.-O. Hwang, S.-Y. Kim, D. Kang and J. M. Kim, <a href="Papers/JSTAT_CHwang2007.pdf">"Ising Antiferromagnets in a Nonzero Uniform Magnetic Field"</a>, <em>Journal of Statistical Mechanics: Theory and Experiment</em>, L05001:1-8 (May 2007)
+                </li>
+                <li data-year="2006" data-type="journal">
+                  C.-O. Hwang, <a href="Papers/JCP_Dec2006.pdf">"Self-Diffusion Constants in Silicon: Ab Initio Calculations in Combination with Classical Rate Theory"</a>, <em>Journal of Chemical Physics</em>, 125, pp226101-1~3 (Dec. 14, 2006)
+                </li>
+                <li data-year="2006" data-type="journal">
+                  C.-O. Hwang and J. A. Given, <a href="Papers/PRE_Hwang2006.pdf">"Last-Passage Monte Carlo Algorithm for Mutual Capacitance"</a>, <em>Physical Review E</em>, 74, 027701 (pp1-3) (Aug. 4, 2006)
+                </li>
+                <li data-year="2006" data-type="journal">
+                  K.-S. Yoon, C.-O. Hwang, Y.-H.Yoo, and T. Won, <a href="Papers/JKPS_April2006.pdf">"First-Principles Investigation of Indium Diffusion in Silicon Substrates"</a>, <em>Journal of the Korean Physical Society</em>, 48, pp535-539 (Apr. 2006)
+                </li>
+                <li data-year="2005" data-type="journal">
+                  C.-O. Hwang and T. Won, <a href="Papers/JKPS_Nov2005.pdf">"Last-passage Algorithms for Corner Charge Singularity of Conductors"</a>, <em>Journal of the Korean Physical Society</em>, 47, ppS464-S466 (Nov. 2005)
+                </li>
+                <li data-year="2005" data-type="journal">
+                  J.-H.Yoo, C.-O. Hwang, B.-J. Kim and T.-Y. Won, <a href="Papers/MS_2005.pdf">"Simple Atomistic Modeling of Dominant BmIn Clusters in Boron Diffusion"</a>, <em>Molecular Simulation</em>, 31, pp817-824 (Oct. 15, 2005)
+                </li>
+                <li data-year="2004" data-type="journal">
+                  C.-O. Hwang and T. Won, <a href="Papers/JKPS_Dec2004.pdf">"Edge Charge Singularity of Conductors"</a>, <em>Journal of the Korean Physical Society</em>, 45, ppS551-S553 (Dec. 2004)
+                </li>
+                <li data-year="2004" data-type="journal">
+                  C.-O. Hwang and M. Mascagni, <a href="Papers/JAP_2004.pdf">"Electrical Capacitance of the Unit Cube"</a>, <em>Journal of Applied Physics</em>, 95(7), pp3798-3802 (April 1, 2004)
+                </li>
+                <li data-year="2004" data-type="journal">
+                  C.-O. Hwang, <a href="Papers/JKPS2004a.pdf">"Extrapolation Technique in the 'Walk on Spheres' Method for the Capacitance of the Unit Cube"</a>, <em>Journal of the Korean Physical Society</em>, 44(2), pp469-470 (Feb. 2004)
+                </li>
+                <li data-year="2003" data-type="journal">
+                  C.-O. Hwang and M. Mascagni, <a href="Papers/IMACS_2003_3.pdf">"Analysis and Comparison of Green's Function First-Passage Algorithms with 'Walk on Spheres' Algorithms"</a>, <em>Mathematics and Computers in Simulation</em>, 63(6), pp605-613 (Nov. 24, 2003)
+                </li>
+                <li data-year="2003" data-type="journal">
+                  J. A. Given and C.-O. Hwang, <a href="Papers/PRE_2003.pdf">"Edge Distribution Method for Solving Elliptic Boundary Value Problems with Boundary Singularities"</a>, <em>Physical Review E</em>, 68, 046128 (pp1-6) (Oct. 27, 2003)
+                </li>
+                <li data-year="2003" data-type="journal">
+                  M. Mascagni and C.-O.Hwang, <a href="Papers/IMACS_2003_2.pdf">"&epsilon;-Shell Error Analysis in 'Walk On Spheres' Algorithms"</a>, <em>Mathematics and Computers in Simulation</em>, 63(2), pp93-104 (Jun. 10, 2003)
+                </li>
+                <li data-year="2003" data-type="journal">
+                  C.-O. Hwang, M. Mascagni and J. A. Given, <a href="Papers/IMACS_2003_1.pdf">"A Feynman-Kac Path-Integral Implementation for Poisson's Equation Using an h-conditioned Green's Function"</a>, <em>Mathematics and Computers in Simulation</em>, 62(3-6), pp347-355 (Mar. 3, 2003)
+                </li>
+                <li data-year="2003" data-type="journal">
+                  C.-O. Hwang and M. Mascagni, <a href="Papers/JKPS_Jan2003.pdf">"Capacitance of the Unit Cube"</a>, <em>Journal of the Korean Physical Society</em>, 42, ppL1-L4 (Jan. 15, 2003)
+                </li>
+                <li data-year="2002" data-type="journal">
+                  J. A. Given, C.-O. Hwang and M. Mascagni, <a href="Papers/PRE_2002.pdf">"First- and Last-Passage Monte Carlo Algorithms for the Charge Density Distribution on a Conducting Surface"</a>, <em>Physical Review E</em>, 66, 056704 (pp1-8) (Nov. 22, 2002)
+                </li>
+                <li data-year="2001" data-type="journal">
+                  C.-O. Hwang, J. A. Given and M. Mascagni, <span class="pub-title">"Rapid Diffusion Monte Carlo Algorithms for Fluid Dynamic Permeability"</span>, <em>Monte Carlo Methods and Applications</em>, 7(3-4), pp213-222 (2001)
+                </li>
+                <li data-year="2001" data-type="journal">
+                  C.-O. Hwang, J. A. Given and M. Mascagni, <a href="Papers/JCP_2001.pdf">"The Simulation-Tabulation Method for Classical Diffusion Monte Carlo"</a>, <em>Journal of Computational Physics</em>, 174(2), pp925-946 (Dec. 10, 2001)
+                </li>
+                <li data-year="2001" data-type="journal">
+                  J. A. Given, M. Mascagni and C.-O. Hwang, <a href="Papers/LSSC2001.pdf">"Continuous Path Brownian Trajectories for Diffusion Monte Carlo Via First- and Last-Passage Distributions"</a>, <em>Lecture Notes in Computer Science</em>, 2179, pp46-57 (June 2001)
+                </li>
+                <li data-year="2001" data-type="journal">
+                  C.-O. Hwang and M. Mascagni, <a href="Papers/ICCS2001.pdf">"A Feynman-Kac Path-Integral Implementation for Poisson's Equation"</a>, <em>Lecture Notes in Computer Science</em>, 2073, pp1282-1288 (May 2001)
+                </li>
+                <li data-year="2001" data-type="journal">
+                  C.-O. Hwang and M. Mascagni, <a href="Papers/APL00787.pdf">"Efficient Modified 'Walk On Spheres' Algorithm for the Linearized Poisson-Boltzmann Equation"</a>, <em>Applied Physics Letters</em>, 78(6), pp787-789 (Feb. 5, 2001)
+                </li>
+                <li data-year="2000" data-type="journal">
+                  C.-O. Hwang, J. A. Given and M. Mascagni, <a href="Papers/PHF_2000.pdf">"On the Rapid Estimation of Permeability for Porous Media Using Brownian Motion Paths"</a>, <em>Physics of Fluids</em>, 12(7), pp1699-1709 (July 2000)
+                </li>
+              </ol>
+            </div>
+
+            <!-- GROUP: BOOKS -->
+            <div class="pub-group" data-group-type="book">
+              <h3 style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.25rem; margin-bottom: 1rem; margin-top: 2rem;">Books</h3>
+              <ol class="filterable-list" style="display: flex; flex-direction: column; gap: 0.875rem;">
+                <li data-year="2014" data-type="book">
+                  황치옥, <span class="pub-title">“과학과종교의시간과공간”</span>, 생각의힘 (2014년 9월 30일 출간)
+                </li>
+              </ol>
+
+              <h3 style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.25rem; margin-bottom: 1rem; margin-top: 2rem;">Refereed Chapters in Edited Volumes</h3>
+              <ol class="filterable-list" style="display: flex; flex-direction: column; gap: 0.875rem;">
+                <li data-year="2012" data-type="book">
+                  C.-O. Hwang, <a href="Papers/.ps">"Solving Partial Differential Equations via Random Walks: A Review"</a>, <em>Statistical Mechanics and Random Walks</em>, A. Skogseid and C. Fasano, editors, Nova Science Publishers, Inc., pp433-442 (2012)
+                </li>
+                <li data-year="2006" data-type="book">
+                  C.-O. Hwang, M. Mascagni and N. Simonov, <a href="Papers/.ps">"Monte Carlo Methods for the Linearized Poisson-Boltzmann Equation"</a>, <em>CFD Collection: Monte Carlo Methods</em>, Hyper Technology Software, 2006.
+                </li>
+                <li data-year="2004" data-type="book">
+                  J. A. Given, C.-O. Hwang and M. Mascagni, <a href="Papers/.ps">"First- and Last-Passage Algorithms In Diffusion Monte Carlo"</a>, <em>New Directions in Statistical Physics: Econophysics, Bioinformatics, and Pattern Recognition</em>, L. T. Wille, editor, Springer-Verlag: Berlin/New York, pp47-66 (Jan. 2004).
+                </li>
+              </ol>
+            </div>
+
+            <!-- GROUP: NATIONAL JOURNALS -->
+            <div class="pub-group" data-group-type="national-journal">
+              <h3 style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.25rem; margin-bottom: 1rem; margin-top: 2rem;">Refereed National Journal Papers</h3>
+              <ol class="filterable-list" style="display: flex; flex-direction: column; gap: 0.875rem;">
+                <li data-year="2020" data-type="national-journal">
+                  H. I. Park, S. Pahadia, C. Hwang and C.-O. Hwang, <a href="Papers/">"Numerical Analysis of Chords Summation Algorithm for &pi; Value"</a>, <em>Journal of Applied Mathematics and Informatics</em>, 38(3-4), pp277-290 (March 2020)
+                </li>
+                <li data-year="2013" data-type="national-journal">
+                  W.-J. Sim, Y.-W Kim, C.-O. Hwang, <span class="pub-title">"A Study on the Network Landscape of Korean Folktales"</span>, <em>Journal of Korean Oral Literature</em>, 37, pp73-105 (Dec. 2013)
+                </li>
+                <li data-year="2004" data-type="national-journal">
+                  C.-O. Hwang, J. Seo, O. Kwon, K. Kim and T. Won, <span class="pub-title">"An Introduction to Kinetic Monte Carlo Methods for Nano-scale Diffusion Process Modeling"</span>, <em>Journal of the Institute of Electronics Engineers of Korea</em>, 41-SD(6), pp435-441 (June 2004)
+                </li>
+                <li data-year="2003" data-type="national-journal">
+                  C.-O. Hwang, <a href="Papers/.ps">"Quasi-Random Number Generation in the View of Parallel Implementation"</a>, <em>Trends in Mathematics</em>, 6(2), pp155-162 (Dec. 2003)
+                </li>
+                <li data-year="1991" data-type="national-journal">
+                  C. O. Hwang, J. J. Hyun, <a href="Papers/quasi_random_final.pdf">"Primordial Black Holes in the Very Early Universe"</a>, <em>Publications of the Korean Astronomical Society (P.K.A.S.)</em>, 6(1), pp38-49 (Dec. 1991)
+                </li>
+              </ol>
+            </div>
+
+            <!-- GROUP: PRESENTATIONS & TALKS -->
+            <div class="pub-group" data-group-type="talk">
+              <h3 style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.25rem; margin-bottom: 1rem; margin-top: 2rem;" id="resume-presentations">Academic Presentations & Talks</h3>
+              <ul class="filterable-list" style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.875rem;">
+                <li data-year="2016" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Oct 2016:</strong> Korean Physical Society 2016 Fall Meeting, Kimdaejung Convention Center, Gwangju, Korea. Poster: <a href="Slides/.ps"><em>"Infinite Parallel Plates Algorithm"</em></a>
+                </li>
+                <li data-year="2016" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Aug 2016:</strong> International Conference on Innovative Material Science and Technology (IMST 2016), Shenzhen, China. Talk: <a href="Slides/.ps"><em>"First- and Last-Passage Monte Carlo Algorithms for Charge Density on a Conducting Surface"</em></a>
+                </li>
+                <li data-year="2016" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Feb 2016:</strong> 29th Annual CSP Workshop, The University of Georgia, Athens, USA. Talk: <a href="Slides/.ps"><em><span class="pub-title">"Phase Transitions of 2D Triangular Antiferromagnetic Ising Model in a Uniform Magnetic Field near h=0 and T=0"</span></em></a>
+                </li>
+                <li data-year="2015" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Nov 2015:</strong> 6th GIST-European Universities Joint Workshop, GIST, Gwangju, Korea. Talk: <a href="Slides/.ps"><em>"First- and Last-passage Monte Carlo Algorithms for Charge Density on a Conducting Surface: A Review"</em></a>
+                </li>
+                <li data-year="2015" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Oct 2015:</strong> Korean Physical Society 2015 Fall Meeting, Gyeongju, Korea. Talk: <a href="Slides/.ps"><em>"Off-centered 'Walk-on-Spheres' (WOS) Algorithm"</em></a>
+                </li>
+                <li data-year="2015" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>July 2015:</strong> 10th IMACS Seminar on Monte Carlo Methods (MCM2015), Linz, Austria. Talk: <em><span class="pub-title">"Monte Carlo Methods for Charge Density on a Conducting Surface"</span></em>
+                </li>
+                <li data-year="2015" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Apr 2015:</strong> Korean Mathematical Society 2015 Spring Meeting, Pusan National University, Pusan, Korea. Talk: <a href="Slides/.ps"><em>"Off-centered 'Walk on Spheres' (WOS) Algorithm"</em></a>
+                </li>
+                <li data-year="2014" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Aug 2014:</strong> International Congress of Mathematicians (ICM 2014), COEX, Seoul, Korea. Talk: <a href="Slides/.ps"><em>"Last-passage Algorithms for the Charge Density on a Conducting Surface"</em></a>
+                </li>
+                <li data-year="2013" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Nov 2013:</strong> GIST SCENT Annual Workshop, GIST, Gwangju, Korea. Talk: <a href="Slides/.ps"><em>"Electrostatic Charge Density on Conducting Surfaces via First-passage and Last-passage Algorithms"</em></a>
+                </li>
+                <li data-year="2013" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Nov 2013:</strong> 11th International Conference on Nano Science and Nano Technology (ICNST 2013), Chosun University, Gwangju, Korea. Poster: <a href="Slides/.ps"><em>"Extended Last-Passage Algorithms for the Charge Density on a Conducting Surface with a Charge"</em></a>
+                </li>
+                <li data-year="2013" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>July 2013:</strong> 25th IUPAP International Conference on Statistical Physics, SNU, Seoul, Korea. Poster: <a href="Slides/.ps"><em>"Extended Last-Passage Algorithms for the Charge Density on a Conducting Surface with a Charge"</em></a>
+                </li>
+                <li data-year="2010" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>July-Aug 2010:</strong> Summer Research Visiting at University of Washington, Seattle, USA.
+                </li>
+                <li data-year="2009" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Oct 2009:</strong> Korean Physical Society 2009 Fall Meeting, Changwon, Korea. Talk: <a href="Slides/.ps"><em>"Weak Landau Damping Instability Simulation using PIC"</em></a>
+                </li>
+                <li data-year="2009" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Sept 2009:</strong> 7th International Conference of Computational Methods in Sciences and Engineering (ICCMSE2009), Rhodes, Greece. Talk: <a href="Slides/.ps"><em>"Field-induced Kosterlitz-Thouless Transition in Critical Triangular-lattice Antiferromagnets: Yang-Lee Zero Analysis"</em></a>
+                </li>
+                <li data-year="2009" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Aug 2009:</strong> 15th Workshop for Statistical Physics, Kwangju, Korea. Talk: <a href="Slides/.ps"><em>"Scaling Exponents of 2-D Triangular Ising Antiferromagnets in an External Magnetic Field"</em></a>
+                </li>
+                <li data-year="2008" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Oct 2008:</strong> Korean Physical Society 2008 Fall Meeting, Gwangju, Korea. Poster: <a href="Slides/.ps"><em>"Thermal Exponents from Specific Heat: 2-D Triangular-lattice Ising Antiferromagnets in an External Magnetic Field"</em></a>
+                </li>
+                <li data-year="2008" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Oct 2008:</strong> Korean Mathematical Society 2008 Fall Meeting, Jeju, Korea. Talk: <a href="Slides/.ps"><em>"New Directions of Statistical Physics in the Age of Computational Sciences: Yang-Lee Zero Approach for 2-D Triangular Antiferromagnets"</em></a>
+                </li>
+                <li data-year="2008" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Oct 2008:</strong> NIMS 2008 Conference & 4th East Asia SIAM Conference, Daejeon, Korea. Talk: <a href="Slides/.ps"><em>"New Directions of Statistical Physics in the Age of Computational Science: Yang-Lee Zero Phase Transition Approach for 2-D Triangular Antiferromagnets"</em></a>
+                </li>
+                <li data-year="2008" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Apr 2008:</strong> Korean Mathematical Society 2008 Spring Meeting, Daegu, Korea. Talk: <a href="Slides/.ps"><em>"Numerical Study on the Evolution of Tachyon Kink with Electric Field"</em></a>
+                </li>
+                <li data-year="2008" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Apr 2008:</strong> Korean Physical Society 2008 Spring Meeting, Daejeon, Korea. Poster: <a href="Slides/.ps"><em><span class="pub-title">"Yang-Lee Zeros of the Triangular Ising Antiferromagnets"</span></em></a>
+                </li>
+                <li data-year="2008" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Jan 2008:</strong> Physics and Applied Physics International Conference, Chungbuk National University, Korea. Talk: <em><span class="pub-title">"Empirical Analysis on Error Convergence in a Random Walk Implementation for the Heat Equation"</span></em>
+                </li>
+                <li data-year="2007" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Oct 2007:</strong> KMS / KPS 2007 Fall Meetings. Talks & Posters: <a href="Slides/.ps"><em>"Kosterlitz-Thouless Transition of the Triangular Ising Antiferromagnets in a Magnetic Field"</em></a>
+                </li>
+                <li data-year="2007" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Apr 2007:</strong> KMS Spring Meeting, Inha University, Korea. Talk: <a href="Slides/.ps"><em>"A Feynman-Kac Formula Implementation for the Linearized Poisson-Boltzmann Equation"</em></a>
+                </li>
+                <li data-year="2007" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Apr 2007:</strong> KPS Spring Meeting, Kangwon Province, Korea. Poster: <a href="Slides/.ps"><em>"Partition function zero: Ising six-state clock model on square lattice"</em></a>
+                </li>
+                <li data-year="2006" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Dec 2006:</strong> NIMS Workshop on Scientific Computing, Daejeon, Korea. Talk: <a href="Slides/.ps"><em>"Diffusion Monte Carlo Methods for Elliptic Partial Differential Equations"</em></a>
+                </li>
+                <li data-year="2006" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Oct 2006:</strong> KPS Fall Meeting, Daegu, Korea. Poster: <a href="Slides/.ps"><em>"Fisher Zeros of the 2-D Triangular-lattice Ising Antiferromagnets in an External Magnetic Field"</em></a>
+                </li>
+                <li data-year="2006" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>July 2006:</strong> 2nd KIAS Conference on Statistical Physics, Seoul, Korea. Poster: <a href="Slides/.ps"><em>"Ising Antiferromagnets in a Nonzero Uniform Magnetic Field"</em></a>
+                </li>
+                <li data-year="2006" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Apr 2006:</strong> KPS Spring Meeting. Poster: <a href="Slides/.ps"><em>"Magnetization of Ising Models at Zero Temperature in a Magnetic Field"</em></a>
+                </li>
+                <li data-year="2005" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Oct 2005:</strong> KPS Fall Meeting, Jeonju, Korea. Poster: <a href="Slides/.ps"><em>"Last-Passage Monte Carlo Algorithms for Mutual Capacitance"</em></a>
+                </li>
+                <li data-year="2005" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>May 2005:</strong> 5th IMACS Seminar on Monte Carlo Methods (MCM2005), FSU, Florida, USA. Talk: <em>"Monte Carlo Methods for Cube Capacitance"</em> and (on behalf of J.H. Yoo) <a href="Slides/MCM2005/.ps"><em>"Simple Atomistic Model with Dominant Clusters..."</em></a>
+                </li>
+                <li data-year="2005" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Apr 2005:</strong> KPS Spring Meeting, Seoul, Korea. Talk: <em><span class="pub-title">"Boron Diffusion in Si: VASP and Transition State Theory Tools"</span></em>
+                </li>
+                <li data-year="2005" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Feb 2005:</strong> 12th Korean Conference on Semiconductors, Seoul, Korea. Talk: <a href="Slides/.ppt"><em>"Corner Charge Singularity of Conductors using Last-passage Algorithms"</em></a>
+                </li>
+                <li data-year="2004" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Oct 2004:</strong> KPS Fall Meeting, Jeju, Korea. Talks: <a href="Slides/.ps"><em>"Kinetic Lattice Monte Carlo without System Constraints"</em></a> and <a href="Slides/.ps"><em>"Cyberinfrastructure and Computational Science"</em></a>
+                </li>
+                <li data-year="2004" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Oct 2004:</strong> Korea Supercomputing Workshop 2004, Daejeon, Korea. Talk: <a href="Slides/.ps"><em>"Scalable Parallel Random Number Generators (SPRNG) and Message Passing Interface (MPI)"</em></a>
+                </li>
+                <li data-year="2004" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Apr 2004:</strong> KPS Spring Meeting, Suwon, Korea. Talks: <a href="Slides/.ppt"><em>"Kinetic Monte Carlo Modeling of Dilute Boron Diffusion in Si..."</em></a> and <a href="Slides/Extrapol_WOS_cube.ps"><em>"What is scientific computing or computational science?"</em></a>
+                </li>
+                <li data-year="2004" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Mar 2004:</strong> 12th ISPSA-2004, Gyeongju, Korea. Poster: <a href="Slides/Extrapol_WOS_cube.ps"><em>"Edge Charge Singularity of Conductors"</em></a> and (NSTI Nanotech, Boston) <a href="Slides/.ps"><em>"Corner Charge Singularity"</em></a>
+                </li>
+                <li data-year="2003" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Oct 2003:</strong> KPS Fall Meeting, Daegu, Korea. Poster: <a href="Slides/.ps"><em>"Monte Carlo Edge Distribution Method for Solving Elliptic Boundary Value Problems..."</em></a>
+                </li>
+                <li data-year="2003" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Apr 2003:</strong> KPS Spring Meeting, Seoul, Korea. Talk: <a href="Slides/Corner_Singularity.ps"><em>"Extrapolation Technique in the WOS Monte Carlo Method for the Unit Cube Capacitance"</em></a>
+                </li>
+                <li data-year="2002" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Oct 2002:</strong> 50th Anniversary KPS Fall Meeting, Hanyang University, Seoul. Talk: <a href="Slides/Extrapol_WOS_cube.ps"><em>"Computing Charge Densities Near Conductor Edges via Backward Random Walk"</em></a>
+                </li>
+                <li data-year="2001" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Oct 2001:</strong> KPS Fall Meeting, Gwangju, Korea. Talk: <a href="Slides/KPS2002Fall/Last_Passage.ps"><em>"Continuous Path Brownian Trajectories for Diffusion Monte Carlo via First- and Last-Passage Distributions"</em></a>
+                </li>
+                <li data-year="2001" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Sept 2001:</strong> 3rd IMACS Seminar on Monte Carlo Methods (MCM2001), Salzburg, Austria. Talk: <a href="Slides/KPS2001Fall/Review.ps"><em>"A Feynman-Kac Formula Implementation for the Linearized Poisson-Boltzmann Equation"</em></a>
+                </li>
+                <li data-year="2001" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>July 2001:</strong> ENUMATH, Ischia Porto, Italy. Talk: <a href="Slides/MCM2001/FK_LPB_slides.ps"><em>"A Feynman-Kac Path-Integral Implementation for Poisson's Equation Using an h-conditioned Green's Function"</em></a>
+                </li>
+                <li data-year="2001" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>May 2001:</strong> ICCS 2001, San Francisco, USA. Talk: <a href="Slides/ENUMATH2001/ENUMATH2001.ps"><em>"A Feynman-Kac Path-Integral Implementation for Poisson's Equation"</em></a>
+                </li>
+                <li data-year="2000" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>July 2000:</strong> Monte Carlo for PDEs, Monaco. Talk (by advisor Mascagni): <a href="Slides/ICCS2001/index.html"><em>"A new fluid permeability estimation in periodic grain consolidation models..."</em></a>
+                </li>
+                <li data-year="1999" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Mar 1999:</strong> APS Centennial Meeting, Atlanta, USA. Poster: <a href="http://www-sop.inria.fr/omega/MONTECARLO/pages/program.html#STOCHASTIC%20MODELS%20AND%20MONTE%20CARLO%20ALGORITHMS%20FOR%20PARTICLES%20TRANSPORT"><em>"A new fluid permeability estimation in nonoverlapping and overlapping sphere model porous media"</em></a>
+                </li>
+                <li data-year="1999" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Feb 1999:</strong> SC 740 Spring Seminar, USM, MS, USA. Talk: <a href="http://www.aps.org/meet/CENT99/BAPS/abs/S8199056.html"><em>"A new fluid permeability estimation..."</em></a>
+                </li>
+                <li data-year="1998" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Dec 1998:</strong> First Southern Symposium on Computing, USM, MS, USA. Talk: <a href="Slides0/index.html"><em>"A New Fluid Permeability Estimation"</em></a>
+                </li>
+                <li data-year="1998" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Oct 1998:</strong> Alliance Institute on Parallel Computing, NCSA, UIUC, IL, USA.
+                </li>
+                <li data-year="1998" data-type="talk" style="border-left: 2px solid var(--border-color); padding-left: 0.75rem;">
+                  <strong>Apr 1998:</strong> Workshop on High Performance Monte Carlo Tools, Stennis Space Center, MS, USA.
+                </li>
+              </ul>
+            </div>
+
+            <!-- GROUP: PREPRINTS -->
+            <div class="pub-group" data-group-type="preprint">
+              <h3 style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.25rem; margin-bottom: 1rem; margin-top: 2rem;">Preprints</h3>
+              <ol class="filterable-list" style="display: flex; flex-direction: column; gap: 0.875rem;">
+                <li data-year="2009" data-type="preprint">
+                  C.-O. Hwang and S.-Y. Kim, <a href="http://www.elsevier.nl">"Scaling Exponents of 2-D Triangular Ising Antiferromagnets in an External Magnetic Field"</a>, submitted to <em>Journal of Statistical Mechanics: Theory and Experiment</em>, 2009.
+                </li>
+              </ol>
+            </div>
+
+            <!-- GROUP: OTHER REGISTERED AND MISC -->
+            <div class="pub-group" data-group-type="etc">
+              <h3 style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.25rem; margin-bottom: 1rem; margin-top: 2rem;">Registered Software & Misc Articles</h3>
+              <ol class="filterable-list" style="display: flex; flex-direction: column; gap: 0.875rem;">
+                <li data-year="2008" data-type="etc">
+                  C.-O. Hwang, <a href="Papers/.ps">“Mutual capacitance 계산 예,”</a> 프로그램등록 (2008-01-181-000292) (Jan. 21, 2008).
+                </li>
+                <li data-year="2008" data-type="etc">
+                  C.-O. Hwang, <a href="Papers/.ps">"과학이란 무엇인가?,"</a> <em>한국전력연구원 2008 KEPRI저널 봄호, 통권27호 삶과 과학 이야기</em> (Spring 2008).
+                </li>
+                <li data-year="2005" data-type="etc">
+                  C.-O. Hwang and T. Won, <a href="Papers/.ps">“틈새원자와 결공의 열처리를 위한 격자 있는 동력학적 몬테카알로,”</a> 프로그램등록 (2005-01-121-001550) (Mar. 16, 2005).
+                </li>
+                <li data-year="2005" data-type="etc">
+                  C.-O. Hwang and T. Won, <a href="Papers/.ps">“Dilute Boron의 열처리를 위한 동력학적 몬테카알로,”</a> 프로그램등록 (2005-01-121-001549) (Mar. 16, 2005).
+                </li>
+                <li data-year="2005" data-type="etc">
+                  C.-O. Hwang, <a href="Papers/.ps">"Computational science & engineering or scientific computing?,"</a> Online Publication in <em>"Webzine"</em>, Vol. 41 (Sept. 2005).
+                </li>
+                <li data-year="2004" data-type="etc">
+                  C.-O. Hwang and T. Won, <a href="Papers/.ps">“정육면체 모양의 완전도체 전기용량 계산,”</a> 프로그램등록 (2004-01-12-167) (Jan. 14, 2004).
+                </li>
+                <li data-year="2002" data-type="etc">
+                  C.-O. Hwang, <a href="Papers/SC_Newsletter.hwp">"What is scientific computing?,"</a> <em>Newsletter of Innovative Technology Center for Radiation Safety at Hanyang University</em>, Vol. 2, No. 4, pp4-5 (Dec. 2002).
+                </li>
+                <li data-year="2002" data-type="etc">
+                  C.-O. Hwang, <a href="Papers/SC_Newsletter.hwp">"Translation in Korean of 'Astronomical Insights',"</a> <em>Creation News Magazine</em>, No. 134, pp48-50 (Nov.-Dec. 2002).
+                </li>
+              </ol>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: LECTURES -->
+    <section id="lectures" class="content-section" aria-labelledby="sec-lectures-title">
+      <h2 id="sec-lectures-title" class="sr-only">Lectures</h2>
+      <div class="section-content">
+        
+        <!-- Main Section Title Card -->
+        <div class="card" style="margin-bottom: 2rem; border-top: 3px solid var(--accent-primary);">
+          <h1 style="font-size: 2rem; font-family: var(--font-serif); margin: 0; color: var(--text-primary);">Old Lectures</h1>
+          <p style="margin-top: 0.5rem; font-style: italic;">Archived course materials from Inha University, Incheon, Korea (2003)</p>
+        </div>
+
+        <div class="card-grid">
+          <!-- Course 1 Card -->
+          <div class="card">
+            <h2 style="font-size: 1.4rem; color: var(--accent-primary); border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem; display: flex; flex-direction: column;">
+              Monte Carlo Methods and Molecular Dynamics
+              <span style="font-size: 0.8125rem; font-family: var(--font-sans); color: var(--text-muted); font-weight: normal; margin-top: 0.25rem;">Spring 2003 — Inha University</span>
+            </h2>
+            
+            <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); color: #3b82f6; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">HWP</span>
+                <a href="Inha_lecture_docu/Spring2003/evaluation.hwp" target="_blank" rel="noopener noreferrer">Evaluation File</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); color: #ef4444; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PDF</span>
+                <a href="Inha_lecture_docu/Spring2003/MC_Inha_lecture.pdf" target="_blank" rel="noopener noreferrer">Lecture Notes I</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); color: #ef4444; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PDF</span>
+                <a href="Inha_lecture_docu/Spring2003/MC_MPI_SPRNG.pdf" target="_blank" rel="noopener noreferrer">Monte Carlo MPI with SPRNG</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); color: #ef4444; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PDF</span>
+                <a href="Inha_lecture_docu/Spring2003/Laplace.pdf" target="_blank" rel="noopener noreferrer">Solving Partial Differential Equations using Brownian Motion Simulation I</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); color: #ef4444; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PDF</span>
+                <a href="Inha_lecture_docu/Spring2003/KMC_Ch8.pdf" target="_blank" rel="noopener noreferrer">Kinetic Monte Carlo Reading Material I</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); color: #ef4444; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PDF</span>
+                <a href="Inha_lecture_docu/Spring2003/kmc_summary.pdf" target="_blank" rel="noopener noreferrer">Kinetic Monte Carlo Reading Material II</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.2); color: #10b981; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PS</span>
+                <a href="Inha_lecture_docu/Spring2003/ICCS2001.ps" target="_blank" rel="noopener noreferrer">Solving Laplace Equation and its Applications Reference</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); color: #ef4444; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PDF</span>
+                <a href="Inha_lecture_docu/Spring2003/Poisson_LPB_Heat.pdf" target="_blank" rel="noopener noreferrer">Solving Poisson, Linearized Poisson-Boltzmann and Heat Equations Reference</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, 115, 22, 0.2); color: #f97316; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PPT</span>
+                <a href="Inha_lecture_docu/Spring2003/MD_Ion_Implantation.ppt" target="_blank" rel="noopener noreferrer">Molecular Dynamics Reference Presentation</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); color: #ef4444; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PDF</span>
+                <a href="Inha_lecture_docu/Spring2003/MC_QM_Inha_lecture.pdf" target="_blank" rel="noopener noreferrer">Quantum Monte Carlo Reference Notes</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Course 2 Card -->
+          <div class="card">
+            <h2 style="font-size: 1.4rem; color: var(--accent-primary); border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem; display: flex; flex-direction: column;">
+              Semiconductor Process Modeling and Simulation
+              <span style="font-size: 0.8125rem; font-family: var(--font-sans); color: var(--text-muted); font-weight: normal; margin-top: 0.25rem;">Fall 2003 — Inha University</span>
+            </h2>
+            
+            <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); color: #3b82f6; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">HWP</span>
+                <a href="Inha_lecture_docu/Fall2003/Lecture_Plan.hwp" target="_blank" rel="noopener noreferrer">Lecture Plan</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); color: #3b82f6; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">HWP</span>
+                <a href="Inha_lecture_docu/Fall2003/evaluation.hwp" target="_blank" rel="noopener noreferrer">Evaluation File</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); color: #3b82f6; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">HWP</span>
+                <a href="Inha_lecture_docu/Fall2003/Logic_circuit.hwp" target="_blank" rel="noopener noreferrer">Logic Circuit Reference Document</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); color: #ef4444; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PDF</span>
+                <a href="Inha_lecture_docu/Fall2003/Basic_UNIX_Tutorial.pdf" target="_blank" rel="noopener noreferrer">Basic Unix Tutorial Reference</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); color: #ef4444; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PDF</span>
+                <a href="Inha_lecture_docu/Fall2003/ssh-tutorial.pdf" target="_blank" rel="noopener noreferrer">SSH Tutorial Reference</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); color: #ef4444; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PDF</span>
+                <a href="Inha_lecture_docu/Fall2003/vi_tutorial.pdf" target="_blank" rel="noopener noreferrer">vi Editor Tutorial Reference</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, 115, 22, 0.2); color: #f97316; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PPT</span>
+                <a href="Inha_lecture_docu/Fall2003/Ion_Implantation.ppt" target="_blank" rel="noopener noreferrer">Ion Implantation: Perspective</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, 115, 22, 0.2); color: #f97316; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PPT</span>
+                <a href="Inha_lecture_docu/Fall2003/Stopping_Powers.ppt" target="_blank" rel="noopener noreferrer">Ion Implantation: Stopping Powers</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, 115, 22, 0.2); color: #f97316; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PPT</span>
+                <a href="Inha_lecture_docu/Fall2003/MD_General.ppt" target="_blank" rel="noopener noreferrer">Molecular Dynamics: Perspective</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, 115, 22, 0.2); color: #f97316; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PPT</span>
+                <a href="Inha_lecture_docu/Fall2003/UT-MARLOWE.ppt" target="_blank" rel="noopener noreferrer">Ion Implantation Package: UT-MARLOWE Perspective</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, 115, 22, 0.2); color: #f97316; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PPT</span>
+                <a href="Inha_lecture_docu/Fall2003/Moldy.ppt" target="_blank" rel="noopener noreferrer">Molecular Dynamics: Moldy Perspective</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.2); color: #8b5cf6; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">LINK</span>
+                <a href="http://www.earth.ox.ac.uk/~keith" target="_blank" rel="noopener noreferrer">Molecular Dynamics Package: Moldy Download</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); color: #ef4444; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PDF</span>
+                <a href="Inha_lecture_docu/Fall2003/moldy.pdf" target="_blank" rel="noopener noreferrer">Moldy Manual</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, 115, 22, 0.2); color: #f97316; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PPT</span>
+                <a href="Inha_lecture_docu/Fall2003/MDRANGE.ppt" target="_blank" rel="noopener noreferrer">RIA Package: MDRANGE</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, 115, 22, 0.2); color: #f97316; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PPT</span>
+                <a href="Inha_lecture_docu/Fall2003/OpenProblems_in_IonImplant.ppt" target="_blank" rel="noopener noreferrer">Open Problems in Ion Implantation</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); color: #3b82f6; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">HWP</span>
+                <a href="Inha_lecture_docu/Fall2003/midterm_test_samples.hwp" target="_blank" rel="noopener noreferrer">Midterm Examination Sample</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); color: #3b82f6; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">HWP</span>
+                <a href="Inha_lecture_docu/Fall2003/Recommended_Papers.hwp" target="_blank" rel="noopener noreferrer">Recommended Papers for Presentation</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); color: #ef4444; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PDF</span>
+                <a href="Inha_lecture_docu/Fall2003/KMC_Ch8.pdf" target="_blank" rel="noopener noreferrer">KMC (Kinetic Monte Carlo) Reading Material I</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); color: #ef4444; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PDF</span>
+                <a href="Inha_lecture_docu/Fall2003/kmc_summary.pdf" target="_blank" rel="noopener noreferrer">KMC Reading Material II</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, 115, 22, 0.2); color: #f97316; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PPT</span>
+                <a href="Inha_lecture_docu/Fall2003/KMC_General.ppt" target="_blank" rel="noopener noreferrer">KMC: Perspective</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, 115, 22, 0.2); color: #f97316; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PPT</span>
+                <a href="Inha_lecture_docu/Fall2003/Boron_in_Silicon.ppt" target="_blank" rel="noopener noreferrer">KMC: Boron Diffusion in Silicon Crystalline</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, 115, 22, 0.2); color: #f97316; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PPT</span>
+                <a href="Inha_lecture_docu/Fall2003/Kinetic_LatticeMC.ppt" target="_blank" rel="noopener noreferrer">Kinetic Lattice Monte Carlo</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, 115, 22, 0.2); color: #f97316; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">PPT</span>
+                <a href="Inha_lecture_docu/Fall2003/Extended_Defects.ppt" target="_blank" rel="noopener noreferrer">Extended Interstitial Defects</a>
+              </li>
+              <li style="display: flex; align-items: center; flex-wrap: wrap;">
+                <span style="background-color: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); color: #3b82f6; padding: 0.15rem 0.5rem; font-size: 0.75rem; border-radius: 4px; margin-right: 0.5rem; font-weight: 600;">HWP</span>
+                <a href="Inha_lecture_docu/Fall2003/finalterm_test_samples.hwp" target="_blank" rel="noopener noreferrer">Final-Term Examination Sample</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: THOUGHTS -->
+    <section id="thoughts" class="content-section" aria-labelledby="sec-thoughts-title">
+      <h2 id="sec-thoughts-title" class="sr-only">Thoughts</h2>
+      <div class="section-content" style="max-width: 800px; margin: 0 auto;">
+        
+        <!-- Main Section Title Card -->
+        <div class="card" style="margin-bottom: 2rem; border-top: 3px solid var(--accent-secondary);">
+          <h1 style="font-size: 2rem; font-family: var(--font-serif); margin: 0; color: var(--text-primary);">Collection of Thoughts</h1>
+          <p style="margin-top: 0.5rem; font-style: italic;">Reflections on consciousness, time, space, and spirituality by Chi-Ok Hwang</p>
+        </div>
+
+        <!-- General Thoughts Card -->
+        <div class="card" style="margin-bottom: 2.5rem;">
+          <h2 style="font-size: 1.4rem; color: var(--accent-primary); border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">Philosophical & Scientific Reflections</h2>
+          <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 1.5rem;">
+            <li style="border-left: 3px solid rgba(99, 102, 241, 0.4); padding-left: 1.25rem;">
+              <strong>Consciousness:</strong> Self consciousness is only a part of your whole consciousness. That is why in your dream you feel yourself as a part of your whole dream even though the whole dream is happening in your consciousness.
+            </li>
+            <li style="border-left: 3px solid rgba(99, 102, 241, 0.4); padding-left: 1.25rem;">
+              <strong>Christianity and Buddhism:</strong> The impersonal attribute of "I am who I am" in Christianity is the absolute existence in Buddhism. In Buddhism, empty space was referred to as an example of the absolute existence.
+            </li>
+            <li style="border-left: 3px solid rgba(99, 102, 241, 0.4); padding-left: 1.25rem;">
+              <strong>Biological Time:</strong> The aging process is not universal.
+            </li>
+            <li style="border-left: 3px solid rgba(99, 102, 241, 0.4); padding-left: 1.25rem;">
+              <strong>Logical Time (Cause and Effect):</strong> The beginning of time by the God is the beginning of the logical time.
+            </li>
+            <li style="border-left: 3px solid rgba(99, 102, 241, 0.4); padding-left: 1.25rem;">
+              <strong>Other Dimensions of Time:</strong>
+              <ul style="margin-top: 0.5rem; list-style-type: circle; padding-left: 1.25rem;">
+                <li><em>Physical time:</em> clock time</li>
+                <li><em>Psychological time:</em> subjective feeling of a time period</li>
+              </ul>
+            </li>
+            <li style="border-left: 3px solid rgba(99, 102, 241, 0.4); padding-left: 1.25rem;">
+              <strong>Transgressions:</strong> In Christianity, transgressions are acts, things, or beings that distract people from the God.
+            </li>
+            <li style="border-left: 3px solid rgba(99, 102, 241, 0.4); padding-left: 1.25rem;">
+              <strong>Open Consciousness:</strong> An individual consciousness is not a closed system.
+            </li>
+            <li style="border-left: 3px solid rgba(99, 102, 241, 0.4); padding-left: 1.25rem;">
+              <strong>Resurrection:</strong> Resurrection in Christianity was not inconceivable to Oriental people in Taoism or Buddhism.
+            </li>
+            <li style="border-left: 3px solid rgba(99, 102, 241, 0.4); padding-left: 1.25rem;">
+              <strong>Space Categories:</strong>
+              <ul style="margin-top: 0.5rem; list-style-type: circle; padding-left: 1.25rem;">
+                <li><em>Physical space:</em> the space where things reside.</li>
+                <li><em>Imaginary space:</em> the space where thoughts reside (e.g., the space your dream makes). The God is ubiquitous in physical space. And the God is in heaven.</li>
+              </ul>
+            </li>
+            <li style="border-left: 3px solid rgba(99, 102, 241, 0.4); padding-left: 1.25rem;">
+              <strong>Self-Consciousness:</strong> The right self-consciousness means removing all illusions.
+            </li>
+            <li style="border-left: 3px solid rgba(99, 102, 241, 0.4); padding-left: 1.25rem;">
+              <strong>Three Factors in the Universe:</strong> Spirit (software), energy (electricity), and material (hardware). The superior factor is the Spirit; the other two came from the Spirit (Christianity). Three ways of medical healing come from these three factors: Religious (spiritual), acupunctual (chi), and herbal (or western) medical healing.
+            </li>
+            <li style="border-left: 3px solid rgba(99, 102, 241, 0.4); padding-left: 1.25rem;">
+              <strong>Two Characters of the Universe:</strong>
+              <p style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                There are two attributes of the Universe: Personal and Impersonal. One example of the impersonal attribute is the laws of sciences. Thanks to the personal attribute of the Universe, prayers work.
+              </p>
+              <p style="margin-bottom: 0.5rem;">
+                The Personal attribute presides over the impersonal attribute, which means that there are gods (spiritual beings) and the God who controls everything. I believe in miracles. The laws of sciences are temporal. The heavens and the Earth will disappear but Its Word remains forever.
+              </p>
+              <p style="margin-bottom: 0;">
+                In Christianity, the God is the Father of all spiritual beings. Humans are one of these spiritual beings.
+              </p>
+            </li>
+            <li style="border-left: 3px solid rgba(99, 102, 241, 0.4); padding-left: 1.25rem;">
+              <strong>Determinism and Predestination:</strong>
+              <p style="margin-top: 0.5rem; margin-bottom: 0;">
+                In Christianity, we do not believe in determinism but in predestination. The difference comes from the fact that the Personal character of the Universe comes first before the impersonal character. Predestination comes from the God's resolution. Its Word never fails, achieves, and returns back to It.
+              </p>
+            </li>
+            <li style="border-left: 3px solid rgba(99, 102, 241, 0.4); padding-left: 1.25rem;">
+              <strong>Attaining to Perfection:</strong>
+              <p style="margin-top: 0.5rem; margin-bottom: 0;">
+                After attaining to perfection, you will have no questions. Within you, you have an internal motivation (impetus) to attain perfection. Everything will be clear.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Religion Comparison Card -->
+        <div class="card" style="margin-bottom: 2.5rem;">
+          <h2 style="font-size: 1.4rem; color: var(--accent-primary); border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">Comparison Among Religions</h2>
+          
+          <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-top: 1rem;">1. Our Natural Status</h3>
+          <ul style="list-style-type: square; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+            <li><strong>Buddhism & Taoism:</strong> We are in the dark.</li>
+            <li><strong>Christianity:</strong> We have the original sin.</li>
+          </ul>
+
+          <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-top: 1rem;">2. Our Goal (Unification of Yin & Yang)</h3>
+          <ul style="list-style-type: square; padding-left: 1.5rem; margin-bottom: 0.5rem;">
+            <li style="margin-bottom: 0.75rem;">
+              <strong>Buddhism:</strong> We should get out of the cycle of reincarnation. We should make the body of Law. Sexual desire is the Buddha nature.
+            </li>
+            <li style="margin-bottom: 0.75rem;">
+              <strong>Christianity:</strong> We should be born spiritually again. The spiritual body is initiated by the Holy Ghost. The Holy Ghost has two properties: water (Yin) and fire (Yang).
+            </li>
+            <li style="margin-bottom: 0;">
+              <strong>Taoism:</strong> The spiritual body seed is obtained by the unification of true Yin and true Yang.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Practicing Dahn, Zen, Yoga Card -->
+        <div class="card" style="margin-bottom: 2rem;">
+          <h2 style="font-size: 1.4rem; color: var(--accent-primary); border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">To Christians Practising Dahn, Zen, or Yoga</h2>
+          <ul style="padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem; color: var(--text-secondary);">
+            <li>You may experience the impersonal character (that is, emptiness and fullness in Buddhism) of Jehovah, the God.</li>
+            <li>After the minor awakening of Kundalini in Yoga (going up of true living water into the center of your brain in Dahn), you should lower the true living water into your heart (into the center of your lower belly in Dahn).</li>
+            <li>Jehovah ("I am who I am" in Hebrew) is the source of living water (1,6 water in Dahn).</li>
+            <li>The Holy Spirit has two properties: water (Yin) and fire (Yang), just like the 1,6 water in Dahn.</li>
+            <li>Being born again in Christianity is the revival of your spiritual body.</li>
+            <li>The Spirit of Jehovah never sleeps.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
